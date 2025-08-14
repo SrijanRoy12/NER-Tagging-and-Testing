@@ -1,0 +1,51 @@
+# Ignore everything by default
+*
+
+# But include these specific folders and files
+!TEXT_DATASETS/
+!TEXT_DATASETS/**
+
+!app.py
+!codestorun.txt
+
+!corrected_json/
+!corrected_json/**
+
+# Include .gitignore itself
+!.gitignore
+
+# Include README if you want to add one later
+!README.md
+
+# Exclude model files (these are typically large)
+NERmodel-3/
+retrain_dataset/
+
+# Exclude Python cache and virtual environment
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+env/
+.venv/
+.env/
+
+# Exclude IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Exclude OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Exclude log files
+*.log
+
+# Exclude temporary files
+*.tmp
+*.temp
